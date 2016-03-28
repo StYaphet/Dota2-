@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6E022CA41CA9501F0015329C /* TestControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E022CA31CA9501F0015329C /* TestControllerViewController.m */; };
 		6E022CA71CA957E10015329C /* HreoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E022CA61CA957E10015329C /* HreoList.m */; };
+		6E022CAE1CA966340015329C /* HeroDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E022CAD1CA966340015329C /* HeroDetailViewController.m */; };
 		6E0D3EC21CA273F400236BC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D3EC11CA273F400236BC1 /* main.m */; };
 		6E0D3EC51CA273F400236BC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D3EC41CA273F400236BC1 /* AppDelegate.m */; };
 		6E0D3ECB1CA273F400236BC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0D3EC91CA273F400236BC1 /* Main.storyboard */; };
@@ -52,6 +53,8 @@
 		6E022CA31CA9501F0015329C /* TestControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestControllerViewController.m; sourceTree = "<group>"; };
 		6E022CA51CA957E10015329C /* HreoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HreoList.h; sourceTree = "<group>"; };
 		6E022CA61CA957E10015329C /* HreoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HreoList.m; sourceTree = "<group>"; };
+		6E022CAC1CA966340015329C /* HeroDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetailViewController.h; sourceTree = "<group>"; };
+		6E022CAD1CA966340015329C /* HeroDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDetailViewController.m; sourceTree = "<group>"; };
 		6E0D3EBD1CA273F400236BC1 /* Dota2英雄介绍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dota2英雄介绍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0D3EC11CA273F400236BC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E0D3EC31CA273F400236BC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -128,6 +131,55 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6E022CA81CA962E50015329C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E193C591CA693DD00CE46E0 /* imageStore.h */,
+				6E193C5A1CA693DD00CE46E0 /* imageStore.m */,
+				6E022CA51CA957E10015329C /* HreoList.h */,
+				6E022CA61CA957E10015329C /* HreoList.m */,
+				6E0D3F061CA27F4C00236BC1 /* heroModel.h */,
+				6E0D3F071CA27F4C00236BC1 /* heroModel.m */,
+				6E463A341CA5286F00DDD617 /* heroData.json */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6E022CA91CA9630D0015329C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6EBC82901CA93D0600A7FCC5 /* HeroTableViewCell.h */,
+				6EBC82911CA93D0600A7FCC5 /* HeroTableViewCell.m */,
+				6EBC82921CA93D0600A7FCC5 /* HeroTableViewCell.xib */,
+				6E0D3EFF1CA27B9F00236BC1 /* minjie.jpg */,
+				6E0D3F001CA27B9F00236BC1 /* zhili.jpg */,
+				6E0D3EFD1CA2760F00236BC1 /* liliang.jpg */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6E022CAA1CA963240015329C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6E0D3EF81CA274AB00236BC1 /* MainViewController.h */,
+				6E0D3EF91CA274AB00236BC1 /* MainViewController.m */,
+				6E0D3F031CA27EE200236BC1 /* HeroListViewController.h */,
+				6E0D3F041CA27EE200236BC1 /* HeroListViewController.m */,
+				6E022CAC1CA966340015329C /* HeroDetailViewController.h */,
+				6E022CAD1CA966340015329C /* HeroDetailViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6E022CAB1CA9633D0015329C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6E0D3EC31CA273F400236BC1 /* AppDelegate.h */,
+				6E0D3EC41CA273F400236BC1 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
 		6E0D3EB41CA273F400236BC1 = {
 			isa = PBXGroup;
 			children = (
@@ -153,30 +205,13 @@
 		6E0D3EBF1CA273F400236BC1 /* Dota2英雄介绍 */ = {
 			isa = PBXGroup;
 			children = (
-				6E0D3EC31CA273F400236BC1 /* AppDelegate.h */,
-				6E0D3EC41CA273F400236BC1 /* AppDelegate.m */,
-				6E0D3EC91CA273F400236BC1 /* Main.storyboard */,
-				6E0D3ECC1CA273F400236BC1 /* Assets.xcassets */,
-				6E0D3ECE1CA273F400236BC1 /* LaunchScreen.storyboard */,
-				6E0D3ED11CA273F400236BC1 /* Info.plist */,
+				6E022CAB1CA9633D0015329C /* Main */,
+				6E022CAA1CA963240015329C /* Controller */,
+				6E022CA91CA9630D0015329C /* View */,
+				6E022CA81CA962E50015329C /* Model */,
 				6E0D3EC01CA273F400236BC1 /* Supporting Files */,
-				6E0D3EF81CA274AB00236BC1 /* MainViewController.h */,
-				6E0D3EF91CA274AB00236BC1 /* MainViewController.m */,
-				6E463A341CA5286F00DDD617 /* heroData.json */,
-				6E0D3EFF1CA27B9F00236BC1 /* minjie.jpg */,
-				6E0D3F001CA27B9F00236BC1 /* zhili.jpg */,
-				6E0D3EFD1CA2760F00236BC1 /* liliang.jpg */,
-				6E0D3F031CA27EE200236BC1 /* HeroListViewController.h */,
-				6E0D3F041CA27EE200236BC1 /* HeroListViewController.m */,
-				6E0D3F061CA27F4C00236BC1 /* heroModel.h */,
-				6E0D3F071CA27F4C00236BC1 /* heroModel.m */,
-				6EBC82901CA93D0600A7FCC5 /* HeroTableViewCell.h */,
-				6EBC82911CA93D0600A7FCC5 /* HeroTableViewCell.m */,
-				6EBC82921CA93D0600A7FCC5 /* HeroTableViewCell.xib */,
 				6E022CA21CA9501F0015329C /* TestControllerViewController.h */,
 				6E022CA31CA9501F0015329C /* TestControllerViewController.m */,
-				6E022CA51CA957E10015329C /* HreoList.h */,
-				6E022CA61CA957E10015329C /* HreoList.m */,
 			);
 			path = "Dota2英雄介绍";
 			sourceTree = "<group>";
@@ -185,8 +220,10 @@
 			isa = PBXGroup;
 			children = (
 				6E0D3EC11CA273F400236BC1 /* main.m */,
-				6E193C591CA693DD00CE46E0 /* imageStore.h */,
-				6E193C5A1CA693DD00CE46E0 /* imageStore.m */,
+				6E0D3ED11CA273F400236BC1 /* Info.plist */,
+				6E0D3EC91CA273F400236BC1 /* Main.storyboard */,
+				6E0D3ECC1CA273F400236BC1 /* Assets.xcassets */,
+				6E0D3ECE1CA273F400236BC1 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -399,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E022CA71CA957E10015329C /* HreoList.m in Sources */,
+				6E022CAE1CA966340015329C /* HeroDetailViewController.m in Sources */,
 				6E0D3F051CA27EE200236BC1 /* HeroListViewController.m in Sources */,
 				6E0D3EC51CA273F400236BC1 /* AppDelegate.m in Sources */,
 				6E0D3EFB1CA274AB00236BC1 /* MainViewController.m in Sources */,
