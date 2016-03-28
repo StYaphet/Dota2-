@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0720"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6E0D3EBC1CA273F400236BC1"
+               BuildableName = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;.app"
+               BlueprintName = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;"
+               ReferencedContainer = "container:Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6E0D3ED51CA273F400236BC1"
+               BuildableName = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;Tests.xctest"
+               BlueprintName = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;Tests"
+               ReferencedContainer = "container:Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6E0D3EE01CA273F400236BC1"
+               BuildableName = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;UITests.xctest"
+               BlueprintName = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;UITests"
+               ReferencedContainer = "container:Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6E0D3EBC1CA273F400236BC1"
+            BuildableName = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;.app"
+            BlueprintName = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;"
+            ReferencedContainer = "container:Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6E0D3EBC1CA273F400236BC1"
+            BuildableName = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;.app"
+            BlueprintName = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;"
+            ReferencedContainer = "container:Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "CGBITMAP_CONTEXT_LOG_ERRORS"
+            value = "1"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6E0D3EBC1CA273F400236BC1"
+            BuildableName = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;.app"
+            BlueprintName = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;"
+            ReferencedContainer = "container:Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
