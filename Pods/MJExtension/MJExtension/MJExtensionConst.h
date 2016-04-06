@@ -64,6 +64,7 @@ MJExtensionAssert2((param) != nil, returnValue)
 }
 #define MJExtensionLogAllProperties MJLogAllIvars
 
+//                           定义完整消息转发时的TypeEncoding，使用的时候就不用记那些东西了
 /**
  *  类型（属性类型）
  */

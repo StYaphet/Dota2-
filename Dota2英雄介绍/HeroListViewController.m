@@ -217,6 +217,8 @@
     
     NSURL *url = [NSURL URLWithString:urlString];
     //  使用SDWebImage设置英雄头像
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.contentMode = UIViewContentModeTop;
     [cell.profileImageView sd_setImageWithURL:url];
     cell.profileImageView.contentMode = UIViewContentModeScaleAspectFit;
     //  查看设备是否支持3D touch

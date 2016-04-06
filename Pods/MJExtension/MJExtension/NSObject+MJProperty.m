@@ -33,8 +33,10 @@ static NSMutableDictionary *newValueFromOldValueDict_;
 static NSMutableDictionary *objectClassInArrayDict_;
 static NSMutableDictionary *cachedPropertiesDict_;
 
+//  当一个类被加载到运行时系统是就会调用这个方法
 + (void)load
 {
+    //  这几个字典都是静态变量，当NSObject一被加载到运行时系统就会创建这几个可变字典
     replacedKeyFromPropertyNameDict_ = [NSMutableDictionary dictionary];
     replacedKeyFromPropertyName121Dict_ = [NSMutableDictionary dictionary];
     newValueFromOldValueDict_ = [NSMutableDictionary dictionary];
@@ -42,6 +44,7 @@ static NSMutableDictionary *cachedPropertiesDict_;
     cachedPropertiesDict_ = [NSMutableDictionary dictionary];
 }
 
+//  根据key来来返回相应的dictionary对象
 + (NSMutableDictionary *)dictForKey:(const void *)key
 {
     if (key == &MJReplacedKeyFromPropertyNameKey) return replacedKeyFromPropertyNameDict_;
