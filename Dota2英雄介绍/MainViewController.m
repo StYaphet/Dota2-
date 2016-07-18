@@ -9,7 +9,7 @@
 #import "MainViewController.h"
 #import "AFNetworking.h"
 #import "MJExtension.h"
-#import "heroModel.h"
+#import "HeroModel.h"
 #import "HeroListViewController.h"
 
 @interface MainViewController ()
@@ -35,30 +35,7 @@
         NSLog(@"%@",responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",[error localizedDescription]);
-    }];
-    
-//    NSBundle *bundle = [NSBundle mainBundle];
-//    if (bundle) {
-//        NSString *fileURLString = [bundle pathForResource:@"heroData" ofType:@"json"];
-//        if (fileURLString) {
-//            NSData *data = [NSData dataWithContentsOfFile:fileURLString];
-//            
-//            NSDictionary *heroDictory = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
-//            NSMutableArray *heroArray = [[NSMutableArray alloc] init];
-//            [heroDictory enumerateKeysAndObjectsUsingBlock:^(NSString *name,NSDictionary *object,BOOL *stop){
-//                heroModel *hero = [[heroModel alloc] init];
-//                hero.name = object[@"name"];
-//                hero.bio = object[@"bio"];
-//                hero.atk_l = object[@"atk_l"];
-//                hero.roles_l = object[@"roles_l"];
-//                [heroArray addObject:hero];
-//            }];
-//            self.heroArray = heroArray;
-//            NSLog(@"%@",((heroModel *)heroArray[0]).bio);
-//    
-//        }
-//    }
-    
+    }];    
 
 }
 

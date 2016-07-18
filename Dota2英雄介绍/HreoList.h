@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class heroModel;
+@class HeroModel;
 
 @interface HreoList : NSObject
 //  对外展示的heroList
@@ -23,6 +23,6 @@
 @property (nonatomic,copy) NSMutableArray *zhiliHeroArray;
 
 +(instancetype)sharedHeroList;
-- (void)addHero:(heroModel *)hero;
+- (void)addHero:(HeroModel *)hero;
 
 @end

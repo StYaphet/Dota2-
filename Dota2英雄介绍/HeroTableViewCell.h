@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIView+Frame.h"
 
 @interface HeroTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
-@property (weak, nonatomic) IBOutlet UILabel *heroNameLable;
+@property (weak, nonatomic) UIImageView *profileImageView;
+@property (weak, nonatomic) UILabel *heroNameLable;
 
+- (void)updateWithObject:(id)object;
 
 @end

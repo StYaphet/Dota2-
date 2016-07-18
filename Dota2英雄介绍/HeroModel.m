@@ -6,9 +6,9 @@
 //  Copyright © 2016年 bupt. All rights reserved.
 //
 
-#import "heroModel.h"
+#import "HeroModel.h"
 
-@implementation heroModel
+@implementation HeroModel
 
 
 @end

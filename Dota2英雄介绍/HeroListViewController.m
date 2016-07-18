@@ -7,8 +7,7 @@
 //
 
 #import "HeroListViewController.h"
-#import "heroModel.h"
-#import "UIImageView+WebCache.h"
+#import "HeroModel.h"
 #import "HeroTableViewCell.h"
 #import "TestControllerViewController.h"
 #import "HreoList.h"
@@ -43,17 +42,11 @@
     
     [self getHeroPictures];
     
-    UINib *nib = [UINib nibWithNibName:@"HeroTableViewCell" bundle:nil];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    [self.tableView registerNib:nib forCellReuseIdentifier:@"HeroCell"];
+    [self.tableView registerClass:[HeroTableViewCell class] forCellReuseIdentifier:@"HeroCell"];
     
-//    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -113,20 +106,6 @@
     [self.tableView addSubview:headImageView];
 }
 
-
-///**
-// *    设置英雄的name集合，用于筛选数据
-// */
-//- (void)setHeroNameSet{
-//    NSSet *liliangSet = [NSSet setWithObjects:@"斧王", @"撼地者",@"帕吉",@"沙王",@"斯温",@"小小",@"昆卡",@"斯拉达",@"潮汐猎人",@"兽王",@"冥魂大帝",@"龙骑士",@"发条技师",@"噬魂鬼",@"全能骑士",@"哈斯卡",@"暗夜魔王",@"末日使者",@"裂魂人",@"炼金术士",@"狼人",@"酒仙",@"混沌骑士",@"树精卫士",@"不朽尸王",@"艾欧",@"半人马战行者",@"马格纳斯",@"伐木机",@"钢背兽",@"巨牙海民",@"亚巴顿",@"上古巨神",@"军团指挥官",@"大地之灵",@"凤凰",nil];
-//    NSSet *minjieSet = [NSSet setWithObjects:@"敌法师", @"卓尔游侠",@"主宰",@"米拉娜",@"变体精灵",@"幻影长矛手",@"复仇之魂",@"力丸",@"狙击手",@"圣堂刺客",@"露娜",@"赏金猎人",@"熊战士",@"矮人直升机",@"德鲁伊",@"娜迦海妖",@"巨魔战将",@"灰烬之灵",@"天穹守望者",@"嗜血狂魔",@"影魔",@"剃刀",@"剧毒术士",@"虚空假面",@"幻影刺客",@"冥界亚龙",@"克林克兹",@"育母蜘蛛",@"编织者",@"幽鬼",@"米波",@"司夜刺客",@"斯拉克",@"美杜莎",@"恐怖利刃",@"凤凰",nil];
-//    NSSet *zhiliSet = [NSSet setWithObjects:@"水晶室女", @"帕克",@"风暴之灵",@"风行者",@"宙斯",@"莉娜",@"暗影萨满",@"修补匠",@"先知",@"魅惑魔女",@"杰奇洛",@"陈",@"沉默术士",@"食人魔魔法师",@"拉比克",@"干扰者",@"光之守卫",@"天怒法师",@"神谕者",@"工程师",@"祸乱之源",@"巫妖",@"莱恩",@"巫医",@"谜团",@"瘟疫法师",@"术士",@"痛苦女王",@"死亡先知",@"帕格纳",@"戴泽",@"拉席克",@"黑暗贤者",@"蝙蝠骑士",@"远古冰魂",@"祈求者",@"殁境神蚀者",@"暗影恶魔",@"维萨吉",@"寒冬飞龙",nil];
-//    self.liliangSet = liliangSet;
-//    self.minjieSet = minjieSet;
-//    self.zhiliSet = zhiliSet;
-//}
-
-
 /**
  *    从json中获取英雄的详细信息
  */
@@ -141,7 +120,7 @@
                 
                 [heroDictory enumerateKeysAndObjectsUsingBlock:^(NSString *name,NSDictionary *object,BOOL *stop){
 
-                    heroModel *hero = [[heroModel alloc] init];
+                    HeroModel *hero = [[HeroModel alloc] init];
                     hero.name = object[@"name"];
                     hero.bio = object[@"bio"];
                     hero.atk_l = object[@"atk_l"];
@@ -189,10 +168,10 @@
 
     HeroTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"HeroCell" forIndexPath:indexPath];
     if (!cell) {
-        cell = [[HeroTableViewCell alloc] init];
+        cell = [[HeroTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"HeroCell"];
     }
     //  根据自身的tag值确定取那个英雄数组的数据
-    heroModel *hero = nil;
+    HeroModel *hero = nil;
     if (!hero) {
         switch (self.tag) {
             case (NSInteger)0:{
@@ -210,17 +189,11 @@
                 break;
         }
     }
+    
+    [cell updateWithObject:hero];
+    
     cell.heroNameLable.text = hero.name;
     
-    //  获取英雄头像
-    NSString *urlString = [NSString stringWithFormat:@"http://cdn.dota2.com/apps/dota2/images/heroes/%@_full.png",hero.engName];
-    
-    NSURL *url = [NSURL URLWithString:urlString];
-    //  使用SDWebImage设置英雄头像
-    UIImageView *imageView = [[UIImageView alloc] init];
-    imageView.contentMode = UIViewContentModeTop;
-    [cell.profileImageView sd_setImageWithURL:url];
-    cell.profileImageView.contentMode = UIViewContentModeScaleAspectFit;
     //  查看设备是否支持3D touch
     if(self.traitCollection.forceTouchCapability == UIForceTouchCapabilityAvailable){
         NSLog(@"3D Touch有效");
@@ -236,6 +209,11 @@
     
     
     
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 50;
 }
 
 #pragma mark - scrollView代理方法

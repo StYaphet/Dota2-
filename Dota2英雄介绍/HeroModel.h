@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface heroModel : NSObject
+@interface HeroModel : NSObject
 
 @property (nonatomic,copy) NSString *name;
 @property (nonatomic,copy) NSString *atk_l;

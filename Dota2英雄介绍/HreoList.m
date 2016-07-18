@@ -7,7 +7,7 @@
 //
 
 #import "HreoList.h"
-#import "heroModel.h"
+#import "HeroModel.h"
 
 @interface HreoList ()
 
@@ -61,7 +61,7 @@
  *
  *
  */
-- (void)addHero:(heroModel *)hero{
+- (void)addHero:(HeroModel *)hero{
     
     if ([self.liliangSet member:hero.name]) {
         [self.liliangHeroArray addObject:hero];
