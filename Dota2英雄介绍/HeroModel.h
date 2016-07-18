@@ -14,7 +14,7 @@
 @property (nonatomic,copy) NSString *name;
 @property (nonatomic,copy) NSString *atk_l;
 @property (nonatomic,copy) NSString *bio;
-@property (nonatomic,copy) NSString *roles_l;
+@property (nonatomic,copy) NSArray *roles_l;
 @property (nonatomic,copy) NSString *engName;
 @property (nonatomic,strong) UIImage *profileImage;
 

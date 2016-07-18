@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) UIImageView *profileImageView;
 @property (weak, nonatomic) UILabel *heroNameLable;
+@property (weak, nonatomic) UILabel *heroTypeLable;
 
 - (void)updateWithObject:(id)object;
 
