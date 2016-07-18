@@ -13,6 +13,14 @@
 
 @property (nonatomic,strong) NSMutableArray *privateHeroList;
 
+//  力量英雄名字集合
+@property (nonatomic,copy) NSSet *liliangSet;
+//  敏捷英雄名字集合
+@property (nonatomic,copy) NSSet *minjieSet;
+//  智力英雄名字集合
+@property (nonatomic,copy) NSSet *zhiliSet;
+
+
 @end
 
 @implementation HreoList
@@ -95,7 +103,7 @@
 /**
  *  向外界展示的heroList
  *
- *  @return <#return value description#>
+ *  @return
  */
 - (NSArray *)heroList{
     return self.privateHeroList;

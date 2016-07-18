@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6E022CA41CA9501F0015329C /* TestControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E022CA31CA9501F0015329C /* TestControllerViewController.m */; };
 		6E022CA71CA957E10015329C /* HreoList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E022CA61CA957E10015329C /* HreoList.m */; };
+		6E042A301D3D16B3000CE793 /* Dota2HeroIntroduction.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6E042A2E1D3D16B3000CE793 /* Dota2HeroIntroduction.xcdatamodeld */; };
 		6E0D3EC21CA273F400236BC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D3EC11CA273F400236BC1 /* main.m */; };
 		6E0D3EC51CA273F400236BC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0D3EC41CA273F400236BC1 /* AppDelegate.m */; };
 		6E0D3ECB1CA273F400236BC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0D3EC91CA273F400236BC1 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 		6E9D960F1CB64539000145F6 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D960D1CB64539000145F6 /* Entity.m */; };
 		6EBC82931CA93D0600A7FCC5 /* HeroTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBC82911CA93D0600A7FCC5 /* HeroTableViewCell.m */; };
 		6EBC82941CA93D0600A7FCC5 /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EBC82921CA93D0600A7FCC5 /* HeroTableViewCell.xib */; };
+		6EFE25EA1CDD96FD001BCE3A /* HeroDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFE25E91CDD96FD001BCE3A /* HeroDetailViewController.m */; };
 		FF95AF1633E462D6F59BC568 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB905E2FFA2C805592F9408 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,7 @@
 		6E022CA31CA9501F0015329C /* TestControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestControllerViewController.m; sourceTree = "<group>"; };
 		6E022CA51CA957E10015329C /* HreoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HreoList.h; sourceTree = "<group>"; };
 		6E022CA61CA957E10015329C /* HreoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HreoList.m; sourceTree = "<group>"; };
+		6E042A2F1D3D16B3000CE793 /* Dota2HeroIntroduction.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dota2HeroIntroduction.xcdatamodel; sourceTree = "<group>"; };
 		6E0D3EBD1CA273F400236BC1 /* Dota2英雄介绍.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dota2英雄介绍.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E0D3EC11CA273F400236BC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6E0D3EC31CA273F400236BC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 		6EBC82901CA93D0600A7FCC5 /* HeroTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroTableViewCell.h; sourceTree = "<group>"; };
 		6EBC82911CA93D0600A7FCC5 /* HeroTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroTableViewCell.m; sourceTree = "<group>"; };
 		6EBC82921CA93D0600A7FCC5 /* HeroTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeroTableViewCell.xib; sourceTree = "<group>"; };
+		6EFE25E81CDD96FD001BCE3A /* HeroDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetailViewController.h; sourceTree = "<group>"; };
+		6EFE25E91CDD96FD001BCE3A /* HeroDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDetailViewController.m; sourceTree = "<group>"; };
 		B9B2EB21207DCFACA082CB41 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		ECB905E2FFA2C805592F9408 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -150,6 +155,7 @@
 				6E0D3F061CA27F4C00236BC1 /* heroModel.h */,
 				6E0D3F071CA27F4C00236BC1 /* heroModel.m */,
 				6E463A341CA5286F00DDD617 /* heroData.json */,
+				6E042A2E1D3D16B3000CE793 /* Dota2HeroIntroduction.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -174,6 +180,8 @@
 				6E0D3EF91CA274AB00236BC1 /* MainViewController.m */,
 				6E0D3F031CA27EE200236BC1 /* HeroListViewController.h */,
 				6E0D3F041CA27EE200236BC1 /* HeroListViewController.m */,
+				6EFE25E81CDD96FD001BCE3A /* HeroDetailViewController.h */,
+				6EFE25E91CDD96FD001BCE3A /* HeroDetailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -450,12 +458,14 @@
 				6E9D960F1CB64539000145F6 /* Entity.m in Sources */,
 				6E022CA71CA957E10015329C /* HreoList.m in Sources */,
 				6E0D3F051CA27EE200236BC1 /* HeroListViewController.m in Sources */,
+				6EFE25EA1CDD96FD001BCE3A /* HeroDetailViewController.m in Sources */,
 				6E0D3EC51CA273F400236BC1 /* AppDelegate.m in Sources */,
 				6E0D3EFB1CA274AB00236BC1 /* MainViewController.m in Sources */,
 				6EBC82931CA93D0600A7FCC5 /* HeroTableViewCell.m in Sources */,
 				6E022CA41CA9501F0015329C /* TestControllerViewController.m in Sources */,
 				6E193C5B1CA693DD00CE46E0 /* imageStore.m in Sources */,
 				6E0D3F081CA27F4C00236BC1 /* heroModel.m in Sources */,
+				6E042A301D3D16B3000CE793 /* Dota2HeroIntroduction.xcdatamodeld in Sources */,
 				6E0D3EC21CA273F400236BC1 /* main.m in Sources */,
 				6E9D960E1CB64539000145F6 /* Entity+CoreDataProperties.m in Sources */,
 				6E9D96031CB6439D000145F6 /* Hero.xcdatamodeld in Sources */,
@@ -707,6 +717,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		6E042A2E1D3D16B3000CE793 /* Dota2HeroIntroduction.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6E042A2F1D3D16B3000CE793 /* Dota2HeroIntroduction.xcdatamodel */,
+			);
+			currentVersion = 6E042A2F1D3D16B3000CE793 /* Dota2HeroIntroduction.xcdatamodel */;
+			path = Dota2HeroIntroduction.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		6E9D96011CB6439D000145F6 /* Hero.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

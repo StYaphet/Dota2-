@@ -15,16 +15,12 @@
 @property (nonatomic,strong) NSArray *heroList;
 //  力量英雄数组
 @property (nonatomic,copy) NSMutableArray *liliangHeroArray;
-//  力量英雄名字集合
-@property (nonatomic,copy) NSSet *liliangSet;
+
 //  敏捷英雄数组
 @property (nonatomic,copy) NSMutableArray *minjieHeroArray;
-//  敏捷英雄名字集合
-@property (nonatomic,copy) NSSet *minjieSet;
+
 //  智力英雄数组
 @property (nonatomic,copy) NSMutableArray *zhiliHeroArray;
-//  智力英雄名字集合
-@property (nonatomic,copy) NSSet *zhiliSet;
 
 +(instancetype)sharedHeroList;
 - (void)addHero:(heroModel *)hero;
