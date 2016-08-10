@@ -19,13 +19,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;/HeroTableViewCell.m"
-            timestampString = "490549903.001385"
+            filePath = "Dota2&#x82f1;&#x96c4;&#x4ecb;&#x7ecd;/HYPSegViewController.m"
+            timestampString = "491499148.196698"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "-updateWithObject:"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

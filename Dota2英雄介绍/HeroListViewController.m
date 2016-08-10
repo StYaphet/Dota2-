@@ -11,6 +11,7 @@
 #import "HeroTableViewCell.h"
 #import "TestControllerViewController.h"
 #import "HreoList.h"
+#import "HYPSegViewController.h"
 
 @interface HeroListViewController ()<UIViewControllerPreviewingDelegate>
 
@@ -207,7 +208,25 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    UIViewController *one = [[UIViewController alloc] init];
+    one.view.backgroundColor = [UIColor redColor];
+    one.title = @"one";
     
+    UIViewController *two = [[UIViewController alloc] init];
+    two.view.backgroundColor = [UIColor greenColor];
+    two.title = @"two";
+    
+    UIViewController *three = [[UIViewController alloc] init];
+    three.view.backgroundColor = [UIColor blueColor];
+    three.title = @"three";
+    
+    UIViewController *four = [[UIViewController alloc] init];
+    four.view.backgroundColor = [UIColor orangeColor];
+    four.title = @"four";
+    
+    HYPSegViewController *controller = [[HYPSegViewController alloc] initWithControllers:@[one,two,three,four]];
+    
+    [self.navigationController pushViewController:controller animated:YES];
     
 }
 
